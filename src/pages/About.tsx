@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { BookOpen, Code, Database, Layers, Server, ShieldCheck } from 'lucide-react';
+import { BookOpen, Code, Database, Layers, Server, ShieldCheck, Users, Keyboard, Brain, Eye, MessageSquare, Globe, GitBranch } from 'lucide-react';
 
 const About = () => {
   const [loaded, setLoaded] = useState(false);
@@ -26,6 +26,18 @@ const About = () => {
     { name: "Cybersecurity", category: "Security", icon: <ShieldCheck size={20} /> },
     { name: "Networking", category: "Infrastructure", icon: <Server size={20} /> },
     { name: "OSI Model", category: "Networking", icon: <Layers size={20} /> },
+    { name: "TCP/IP", category: "Networking", icon: <Globe size={20} /> },
+    { name: "Routing", category: "Networking", icon: <Globe size={20} /> },
+    { name: "Transmission Media", category: "Networking", icon: <Globe size={20} /> },
+    { name: "Git", category: "Tools", icon: <GitBranch size={20} /> },
+    { name: "GitHub", category: "Tools", icon: <GitBranch size={20} /> },
+    { name: "Human Resources", category: "Soft Skills", icon: <Users size={20} /> },
+    { name: "Teamwork", category: "Soft Skills", icon: <Users size={20} /> },
+    { name: "Communication", category: "Soft Skills", icon: <MessageSquare size={20} /> },
+    { name: "Problem-Solving", category: "Soft Skills", icon: <Brain size={20} /> },
+    { name: "Analytical Thinking", category: "Soft Skills", icon: <Brain size={20} /> },
+    { name: "Attention to Detail", category: "Soft Skills", icon: <Eye size={20} /> },
+    { name: "Speed Typing", category: "Soft Skills", icon: <Keyboard size={20} /> },
   ];
 
   return (
@@ -41,7 +53,7 @@ const About = () => {
               <h2 className="text-2xl font-heading font-bold mb-4 text-white">My Journey</h2>
               <div className="space-y-4 text-gray-300">
                 <p>
-                  I'm a computer science student and competitive programmer with a passion for learning
+                  I'm a computer science student and competitive and creative programmer with a passion for learning
                   and experiencing new things. I attend the Faculty of Computers and Informatics at Zagazig University.
                 </p>
                 <p>
@@ -71,7 +83,8 @@ const About = () => {
                     <h3 className="font-medium text-white">Faculty of Computers and Informatics</h3>
                   </div>
                   <p className="text-sm text-gray-400">Zagazig University</p>
-                  <p className="text-sm text-gray-400">Bachelor's degree, 2023 - Present</p>
+                  <p className="text-sm text-gray-400">Bachelor's degree, 10/2023 - Present</p>
+                  <p className="text-sm text-gray-400">GPA: 3.1</p>
                 </div>
 
                 <div>
@@ -79,8 +92,8 @@ const About = () => {
                     <BookOpen size={18} className="text-galaxy-accent" />
                     <h3 className="font-medium text-white">Faqous Military High School</h3>
                   </div>
-                  <p className="text-sm text-gray-400">High School Diploma, 2022 - 2023</p>
-                  <p className="text-sm text-gray-400">Grade: 63.05%</p>
+                  <p className="text-sm text-gray-400">High School Diploma, 09/2022 - 08/2023</p>
+                  <p className="text-sm text-gray-400">Grade: 83.05%</p>
                 </div>
               </div>
             </div>
@@ -136,7 +149,7 @@ const About = () => {
             <div className="galaxy-card p-6">
               <h3 className="font-medium text-lg text-white mb-2">
                 <a href="https://openlearn.aucegypt.edu/" target="_blank" rel="noopener noreferrer" className="hover:underline text-galaxy-accent">
-                  AUC 103 Foundations of English
+                  AUC 101 Foundations of English
                 </a>
               </h3>
               <p className="text-sm text-gray-400">English - Teaching English as a Second Language</p>

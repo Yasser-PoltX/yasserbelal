@@ -5,7 +5,9 @@ import {
   SiGithub,
   SiCodeforces,
   SiTryhackme,
-  SiHackthebox
+  SiHackthebox,
+  SiX,
+  SiInstagram
 } from 'react-icons/si';
 import {
   Mail,
@@ -78,7 +80,7 @@ const Contact = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <a
-                    href="https://github.com/yaserbelal"
+                    href="https://github.com/Yasser-PoltX"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="galaxy-card p-6 flex flex-col items-center text-center hover:border-galaxy-accent/50 transition-all group"
@@ -98,7 +100,7 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="https://t.me/yaser_poltx"
+                    href="https://t.me/Yasser_PoltX"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="galaxy-card p-6 flex flex-col items-center text-center hover:border-galaxy-accent/50 transition-all group"
@@ -133,6 +135,24 @@ const Contact = () => {
                   >
                     <SiHackthebox size={36} className="text-galaxy-accent mb-4 group-hover:scale-110 transition-transform" />
                     <span className="text-white text-lg font-medium">Hack The Box</span>
+                  </a>
+                  <a
+                    href="https://x.com/Yasser_PoltX"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="galaxy-card p-6 flex flex-col items-center text-center hover:border-galaxy-accent/50 transition-all group"
+                  >
+                    <SiX size={36} className="text-galaxy-accent mb-4 group-hover:scale-110 transition-transform" />
+                    <span className="text-white text-lg font-medium">X (Twitter)</span>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/yasser___belal/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="galaxy-card p-6 flex flex-col items-center text-center hover:border-galaxy-accent/50 transition-all group"
+                  >
+                    <SiInstagram size={36} className="text-galaxy-accent mb-4 group-hover:scale-110 transition-transform" />
+                    <span className="text-white text-lg font-medium">Instagram</span>
                   </a>
                 </div>
               </div>

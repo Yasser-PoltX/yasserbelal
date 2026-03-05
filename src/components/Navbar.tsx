@@ -30,14 +30,13 @@ const Navbar = () => {
   }, [location]);
 
   const handleDownloadCV = () => {
-    window.open('/assit/Yasser-Belal-CV.pdf', '_blank');
+    window.open('/assit/Yasser-Belal-Salah-Shehata-Resume-2025-11-05.pdf', '_blank');
   };
 
   return (
-    <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'py-2 bg-black/40 backdrop-blur-md border-b border-white/10' : 'py-4 bg-transparent'
-      }`}
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'py-2 bg-black/40 backdrop-blur-md border-b border-white/10' : 'py-4 bg-transparent'
+        }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
@@ -50,9 +49,8 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`transition-colors duration-300 hover:text-galaxy-accent ${
-                location.pathname === link.path ? 'nav-link-active' : 'text-white/80'
-              }`}
+              className={`transition-colors duration-300 hover:text-galaxy-accent ${location.pathname === link.path ? 'nav-link-active' : 'text-white/80'
+                }`}
             >
               {link.name}
             </Link>
@@ -67,7 +65,7 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden text-white p-2 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
@@ -77,19 +75,17 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div 
-        className={`fixed top-[60px] left-0 w-full bg-black/90 backdrop-blur-md border-b border-white/10 transition-all duration-300 md:hidden ${
-          isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
+      <div
+        className={`fixed top-[60px] left-0 w-full bg-black/90 backdrop-blur-md border-b border-white/10 transition-all duration-300 md:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          }`}
       >
         <div className="container mx-auto py-4 px-4 flex flex-col space-y-4">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`py-2 px-4 w-full transition-colors duration-300 hover:text-galaxy-accent ${
-                location.pathname === link.path ? 'text-galaxy-accent' : 'text-white/80'
-              }`}
+              className={`py-2 px-4 w-full transition-colors duration-300 hover:text-galaxy-accent ${location.pathname === link.path ? 'text-galaxy-accent' : 'text-white/80'
+                }`}
             >
               {link.name}
             </Link>

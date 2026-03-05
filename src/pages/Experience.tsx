@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import { CalendarDays, User, Briefcase } from 'lucide-react';
+import { CalendarDays, User, Briefcase, ExternalLink } from 'lucide-react';
 
 interface ExperienceItem {
   title: string;
@@ -8,6 +8,7 @@ interface ExperienceItem {
   period: string;
   location: string;
   responsibilities: string[];
+  certificateUrl?: string;
 }
 
 const Experience = () => {
@@ -25,12 +26,13 @@ const Experience = () => {
     {
       title: "Human Resources Team Member",
       company: "GDG On-Campus Zagazig",
-      period: "03/2025 - present",
+      period: "03/2025 - 07/2025",
       location: "GDG On-Campus Zagazig",
       responsibilities: [
         "Worked as a Human Resources Team Member supporting recruitment and organizational tasks.",
         "Assisted in coordinating interviews, managing candidate communications, and maintaining HR records.",
       ],
+      certificateUrl: "https://drive.google.com/file/d/18V7_4kCB_3IW4V4IhBrT-4BZISE___NJ/view?usp=sharing",
     },
     {
       title: "Human Resources Team Member",
@@ -44,26 +46,18 @@ const Experience = () => {
         "Monitored and evaluated mentors' performance and created Google Forms to assess the effectiveness of training sessions.",
         "Utilized Google Sheets to manage and analyze evaluation data, contributing to continuous improvement efforts within the ICPC community.",
       ],
-    },
-    {
-      title: "Member",
-      company: "GDG On-Campus Zagazig",
-      period: "11/2024 - present",
-      location: "On-Campus Zagazig",
-      responsibilities: [
-        "Started a journey into backend development, learning the basics of PHP, Laravel, and MySQL.",
-        "Participated in team-based activities, enhancing my skills in teamwork, collaboration, and communication.",
-      ],
+      certificateUrl: "https://drive.google.com/file/d/16u4jxwKkMbfmkHZZRCQsEOgrosupeVRX/view?usp=sharing",
     },
     {
       title: "Member",
       company: "IEEE ZSB CS",
-      period: "10/2024 - present",
+      period: "11/2024 - 09/2025",
       location: "IEEE ZSB CS",
       responsibilities: [
         "Started a journey into cybersecurity, learning the basics of network security, ethical hacking, penetration testing, and security protocols.",
         "Took in team activities, improving teamwork, collaboration, and communication skills.",
       ],
+      certificateUrl: "https://drive.google.com/file/d/1yOY_NhQSJRHkE4x0B7ZokbCFoU4iFy6s/view?usp=sharing",
     },
     {
       title: "Trainee",
@@ -75,7 +69,9 @@ const Experience = () => {
         "Solved programming problems on different topics",
         "Participated in training sessions to enhance problem-solving and competitive programming skills.",
         "Collaborated with peers and mentors to solve algorithmic challenges in preparation for ICPC competitions.",
+        "Engaged in remote activities to support the growth and engagement of the ICPC community.",
       ],
+      certificateUrl: "https://drive.google.com/file/d/1nliHmFB12YhrbgWgWT_VFljzCnHrOEOP/view?usp=drive_link",
     },
   ];
 
@@ -130,6 +126,20 @@ const Experience = () => {
                       </li>
                     ))}
                   </ul>
+
+                  {exp.certificateUrl && (
+                    <div className="mt-4 pt-4 border-t border-white/10">
+                      <a
+                        href={exp.certificateUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-galaxy-accent hover:text-galaxy-glow transition-colors text-sm font-medium"
+                      >
+                        <ExternalLink size={14} />
+                        View Certificate
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

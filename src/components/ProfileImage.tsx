@@ -24,7 +24,7 @@ const ProfileImage = () => {
       <div className={`relative z-10 w-full h-full rounded-full overflow-hidden border-2 border-galaxy-accent/50 transition-all duration-1000 ${loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
         <div className="absolute inset-0 bg-gradient-to-br from-galaxy-accent/30 to-galaxy-blue/50 mix-blend-overlay" />
         <img 
-          src="/lovable-uploads/f379cc57-e295-4397-9250-ed6471c29ed4.png" 
+          src="/lovable-uploads/profile.png" 
           alt="Yasser Belal" 
           className="w-full h-full object-cover object-center"
         />
