@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 240 30% 4%;
+    --background: 215 45% 5%;
     --foreground: 210 40% 98%;
 
-    --card: 240 25% 8%;
+    --card: 215 35% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 240 25% 8%;
+    --popover: 215 35% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 252 94% 67%;
+    --primary: 188 94% 53%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 240 15% 14%;
+    --secondary: 215 25% 12%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 240 15% 14%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 215 25% 12%;
+    --muted-foreground: 215 10% 60%;
 
-    --accent: 252 94% 67%;
+    --accent: 188 94% 53%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 15% 20%;
-    --input: 240 15% 20%;
-    --ring: 252 94% 70%;
+    --border: 215 20% 18%;
+    --input: 215 20% 18%;
+    --ring: 188 94% 55%;
 
     --radius: 0.5rem;
   }
@@ -44,7 +44,7 @@
 
   body {
     @apply bg-galaxy-dark text-foreground antialiased overflow-x-hidden;
-    background-image: radial-gradient(circle at 50% 50%, #261C5A 0%, #0A0E1A 100%);
+    background-image: radial-gradient(circle at 50% 50%, #0D1526 0%, #060B14 100%);
     background-attachment: fixed;
   }
 
@@ -53,7 +53,7 @@
   }
   
   .cosmic-glow {
-    text-shadow: 0 0 20px #8B5CF6, 0 0 40px #8B5CF6;
+    text-shadow: 0 0 20px #22D3EE, 0 0 40px #22D3EE;
   }
   
   .star {

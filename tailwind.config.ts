@@ -30,12 +30,12 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				galaxy: {
-					'dark': '#0A0E1A',
-					'purple': '#261C5A',
-					'blue': '#0B2544',
-					'accent': '#8B5CF6',
-					'glow': '#4F46E5',
-					'star': '#ECEAFF'
+					'dark': '#060B14',
+					'purple': '#0D1526',
+					'blue': '#0A1628',
+					'accent': '#22D3EE',
+					'glow': '#0EA5E9',
+					'star': '#D4E8FF'
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
@@ -107,7 +107,7 @@ export default {
 			},
 			backgroundImage: {
 				'galaxy-pattern': "url('/uploads/2908c802-9f95-4ef1-a546-dbcc2aaefb3b.png')",
-				'stars': "radial-gradient(circle, transparent 0%, transparent 70%, rgba(255,255,255,0.1) 100%), linear-gradient(to bottom, #0A0E1A, #1A1B4B)"
+				'stars': "radial-gradient(circle, transparent 0%, transparent 70%, rgba(255,255,255,0.1) 100%), linear-gradient(to bottom, #060B14, #0D1526)"
 			}
 		}
 	},
