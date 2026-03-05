@@ -115,46 +115,7 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className={`transition-all duration-700 delay-400 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-2xl font-heading font-bold mb-6 text-white">Certificates</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="galaxy-card p-6">
-              <h3 className="font-medium text-lg text-white mb-2">
-                <a href="https://maharatech.gov.eg/mod/customcert/view.php?id=994&downloadown=1" target="_blank" rel="noopener noreferrer" className="hover:underline text-galaxy-accent">
-                  Computer Network Fundamentals
-                </a>
-              </h3>
-              <p className="text-sm text-gray-400">Networking - OSI Model, Internet Protocol Suite (TCP/IP), Routing, Transmission Media</p>
-            </div>
 
-            <div className="galaxy-card p-6">
-              <h3 className="font-medium text-lg text-white mb-2">
-                <a href="https://www.udemy.com/certificate/UC-bf9bfa00-dc06-4672-91c0-ab366921f300/" target="_blank" rel="noopener noreferrer" className="hover:underline text-galaxy-accent">
-                  Git and GitHub
-                </a>
-              </h3>
-              <p className="text-sm text-gray-400">Git - GitHub</p>
-            </div>
-
-            <div className="galaxy-card p-6">
-              <h3 className="font-medium text-lg text-white mb-2">
-                <a href="https://www.open.edu/openlearn/digital-computing/simple-coding/content-section-0" target="_blank" rel="noopener noreferrer" className="hover:underline text-galaxy-accent">
-                  The Open University Digital & Computing
-                </a>
-              </h3>
-              <p className="text-sm text-gray-400">Introductory level, Hardware, Software, Simple coding</p>
-            </div>
-
-            <div className="galaxy-card p-6">
-              <h3 className="font-medium text-lg text-white mb-2">
-                <a href="https://openlearn.aucegypt.edu/" target="_blank" rel="noopener noreferrer" className="hover:underline text-galaxy-accent">
-                  AUC 101 Foundations of English
-                </a>
-              </h3>
-              <p className="text-sm text-gray-400">English - Teaching English as a Second Language</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
