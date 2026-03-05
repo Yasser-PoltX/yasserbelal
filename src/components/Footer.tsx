@@ -21,7 +21,7 @@ const Footer = () => {
               <Mail size={20} />
             </a>
             <a 
-              href="https://github.com/YasserBelal" 
+              href="https://github.com/Yasser-PoltX" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-galaxy-accent transition-colors"
