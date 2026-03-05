@@ -4,7 +4,7 @@ A cosmic-themed portfolio website showcasing my skills, experience, and projects
 
 ## Project Info
 
-**URL**: https://lovable.dev/projects/5ece2b66-815a-4b0b-a131-a4a3c4aa5a0a
+**URL**: https://yasserbelal.vercel.app
 
 ## Features
 

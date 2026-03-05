@@ -15,11 +15,11 @@ const About = () => {
   }, []);
 
   const skills = [
-    { name: "PHP", category: "Programming", icon: <Code size={20} /> },
     { name: "C++", category: "Programming", icon: <Code size={20} /> },
-    { name: "HTML", category: "Web", icon: <Code size={20} /> },
-    { name: "MySQL", category: "Database", icon: <Database size={20} /> },
     { name: "OOP", category: "Programming", icon: <Layers size={20} /> },
+    { name: "HTML", category: "Web", icon: <Code size={20} /> },
+    { name: "PHP", category: "Programming", icon: <Code size={20} /> },
+    { name: "MySQL", category: "Database", icon: <Database size={20} /> },
     { name: "Laravel", category: "Framework", icon: <Code size={20} /> },
     { name: "Kali Linux", category: "OS", icon: <Server size={20} /> },
     { name: "Ethical Hacking", category: "Security", icon: <ShieldCheck size={20} /> },
@@ -28,7 +28,6 @@ const About = () => {
     { name: "OSI Model", category: "Networking", icon: <Layers size={20} /> },
     { name: "TCP/IP", category: "Networking", icon: <Globe size={20} /> },
     { name: "Routing", category: "Networking", icon: <Globe size={20} /> },
-    { name: "Transmission Media", category: "Networking", icon: <Globe size={20} /> },
     { name: "Git", category: "Tools", icon: <GitBranch size={20} /> },
     { name: "GitHub", category: "Tools", icon: <GitBranch size={20} /> },
     { name: "Human Resources", category: "Soft Skills", icon: <Users size={20} /> },
@@ -53,7 +52,7 @@ const About = () => {
               <h2 className="text-2xl font-heading font-bold mb-4 text-white">My Journey</h2>
               <div className="space-y-4 text-gray-300">
                 <p>
-                  I'm a computer science student and competitive and creative programmer with a passion for learning
+                  I'm a Information Technology student and competitive and creative programmer with a passion for learning
                   and experiencing new things. I attend the Faculty of Computers and Informatics at Zagazig University.
                 </p>
                 <p>

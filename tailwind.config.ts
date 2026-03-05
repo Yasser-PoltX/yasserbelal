@@ -106,7 +106,7 @@ export default {
 				'twinkle': 'twinkle 4s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'galaxy-pattern': "url('/public/lovable-uploads/2908c802-9f95-4ef1-a546-dbcc2aaefb3b.png')",
+				'galaxy-pattern': "url('/uploads/2908c802-9f95-4ef1-a546-dbcc2aaefb3b.png')",
 				'stars': "radial-gradient(circle, transparent 0%, transparent 70%, rgba(255,255,255,0.1) 100%), linear-gradient(to bottom, #0A0E1A, #1A1B4B)"
 			}
 		}

@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import { CalendarDays, User, Briefcase, ExternalLink } from 'lucide-react';
+import { CalendarDays, User, Briefcase, ExternalLink, Award } from 'lucide-react';
 
 interface ExperienceItem {
   title: string;
@@ -21,6 +21,29 @@ const Experience = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const certificates = [
+    {
+      title: "Computer Network Fundamentals",
+      url: "https://maharatech.gov.eg/mod/customcert/view.php?id=994&downloadown=1",
+      description: "Networking - OSI Model, Internet Protocol Suite (TCP/IP), Routing, Transmission Media",
+    },
+    {
+      title: "Git and GitHub",
+      url: "https://www.udemy.com/certificate/UC-bf9bfa00-dc06-4672-91c0-ab366921f300/",
+      description: "Git - GitHub",
+    },
+    {
+      title: "The Open University Digital & Computing",
+      url: "https://www.open.edu/openlearn/digital-computing/simple-coding/content-section-0",
+      description: "Introductory level, Hardware, Software, Simple coding",
+    },
+    {
+      title: "AUC 101 Foundations of English",
+      url: "https://openlearn.aucegypt.edu/",
+      description: "English - Teaching English as a Second Language",
+    },
+  ];
 
   const experiences: ExperienceItem[] = [
     {
@@ -141,6 +164,39 @@ const Experience = () => {
                     </div>
                   )}
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Certificates Section */}
+        <div className={`mt-16 transition-all duration-700 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: `${(experiences.length + 1) * 150}ms` }}>
+          <h2 className="section-heading">Certificates</h2>
+          <p className="text-gray-300 max-w-3xl mb-8">
+            Professional certifications and courses that have enhanced my knowledge and expertise.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {certificates.map((cert, index) => (
+              <div
+                key={index}
+                className={`galaxy-card p-6 transition-all duration-700 hover:border-galaxy-accent/50 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                style={{ transitionDelay: `${(experiences.length + index + 2) * 150}ms` }}
+              >
+                <div className="flex items-center gap-2 mb-3">
+                  <Award size={20} className="text-galaxy-accent flex-shrink-0" />
+                  <h3 className="font-medium text-white">
+                    <a
+                      href={cert.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-galaxy-accent transition-colors inline-flex items-center gap-1"
+                    >
+                      {cert.title}
+                      <ExternalLink size={14} className="text-galaxy-accent" />
+                    </a>
+                  </h3>
+                </div>
+                <p className="text-sm text-gray-400">{cert.description}</p>
               </div>
             ))}
           </div>
